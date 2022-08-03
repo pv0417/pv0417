@@ -1,4 +1,40 @@
 Can you see how the above example works? As an exercise, try printing the following pattern using a while loop (Hint: use string concatenation):
+         
+```
+*
+**
+***
+****
+*****
+******
+*******
+```
+
+```
+***********
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+```
 
 ```
           *
@@ -44,6 +80,30 @@ Here's another one, putting the two together:
          ***
           *
 ```
+max_length  = 7
+i = max_length -1
+j = 1
+space = " " 
+while i >0:
+    while j <= max_length:
+        print("*"*j)
+        j = j+1
+    i-= 1
+
+
+max_length = 11
+i = 0
+j = max_length
+
+while j >= 0:
+    print("*"*j)
+    j = j-1
+while i < max_length:
+    
+    print("*"*i)
+    i = i+1
+
+
 
 max_length  = k = 7
 j = 1
@@ -58,6 +118,8 @@ while i >0:
     print(" "*(len(space)*k+1)+"*"*i)
     i = i-1
 
+         
+        
 max_length  = 7
 i = max_length -1
 j = 1
@@ -69,6 +131,8 @@ while i >0:
     print(" "*(len(space)*max_length)+"*"*i)
     i = i-1
         
+
+
 max_length = 11
 i = 0
 j = max_length
